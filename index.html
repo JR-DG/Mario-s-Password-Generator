@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href="style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../../Desktop/GitHub/Bootstrap-Portfolio/images/MarioLogo.svg" alt="" width="72" height="72">
+    <h2>Random Password Generator</h2>
+    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+  </div>
+    <title>Password Generator</title>
+  </head>
+  <body>   
+      <div class="container"> 
+          <div class="row">  
+              <div class="col-lg-8 col-sm-12 mx-auto">
+                  <div class="content">
+                      <h4>Generate Your Password</h4>
+                        <br />
+                        <input type="text" id="display">
+                        <br />
+                        <br />
+                        <label for="customRange1"></label>
+                        <input type="range" min="0" max="50" class="custom-range" id="customRange1">
+                        <br />
+                        <div id="length"></div>
+                        <br />
+                        <div class="button-box col-lg-12 mx-auto">
+                          <a onclick="generate()" class="btn btn-primary btn-lg btn-block" role="button">Generate</a>
+                          <a onclick="copyPassword()" class="btn btn-secondary btn-lg btn-block" role="button">Copy To Clipboard</a>
+                 </div>
+                  </div>
+              </div> 
+          </div>  
+      </div>
+      <script src="script.js"></script>
+  </body>
+  </html>
